@@ -1,1 +1,1 @@
-# lugares_turisticos_colombia
+# lugares_turisticos_boyaca
