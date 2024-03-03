@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr 10fr 2fr;
+    grid-template-rows: 2fr 2fr 3fr 10fr 2fr;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas: "beforeHeader beforeHeader beforeHeader" 
@@ -19,12 +19,22 @@
     "footer footer footer";
 }
 
-.page .beforeHeader{
-    background-color: #bd9f9f;
+.page .beforeHeader {
+    background-color: #ffffff; /* Color de fondo original */
     grid-area: beforeHeader;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed; /* Hace que el elemento sea fijo */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    top: 0; /* Se fija en la parte superior de la ventana */
+    z-index: 998; /* Asegura que el elemento esté por encima de otros elementos */
+    opacity: 0.9; /* Ajusta la opacidad del elemento */
+    transition: opacity 0.3s ease-in-out; /* Transición suave de opacidad */
+}
+
+.page:hover .beforeHeader {
+    opacity: 0.9; /* Cambia la opacidad al pasar el cursor sobre la página */
 }
 
 .page .headerCont{
@@ -40,13 +50,13 @@
 }
     
 .page .navCont{
-    background-color: #858585;
+    background-color: #e0e0e0;
     grid-area: introduccion;
     padding: 20px;
 }
 
 .page .bodyCont {
-    background-color: #869bcd;
+    background-color: #ec8888;
     grid-area: contenido;
     padding: 10px;
 }
@@ -61,7 +71,7 @@
 
 
 .page .formCont{
-    background-color: #86cda2;
+    background-color: #86cd86;
     grid-area: menu1;
     padding: 10px;
     display: flex;
@@ -73,7 +83,7 @@
 
 .page .footerCont{
     padding: 10px;
-    background-color: #cd869d;
+    background-color: #006305;
     grid-area: footer;
 }
 .image-gallery {
