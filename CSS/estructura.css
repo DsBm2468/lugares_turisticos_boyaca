@@ -35,6 +35,7 @@
 
 .page:hover .beforeHeader {
     opacity: 0.9; 
+    position:sticky
 }
 
 .page .headerCont{
@@ -86,14 +87,75 @@
     font-size: 20px; 
 }
 
-.page .footerCont{
-    padding: 10px;
+.page .footerCont5{
+    padding-block: 27px;
+    padding-inline: 10px;
     background-color: #055207;
     grid-area: footer;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     position: sticky;
 }
+
+.page .formCont{
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: #086b0b;
+    grid-area:footer;
+    align-items: start;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    position: sticky;
+    justify-content: left;
+    display: flex;
+}
+
+.page .formCont2{
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: #06830a;
+    grid-area:footer;
+    align-items: start;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    position: sticky;
+    justify-content: left;
+    display: flex;
+}
+
+.page .f4{
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: #089b0d;
+    grid-area:footer;
+    align-items: start;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    position: sticky;
+    justify-content: left;
+    display: flex;
+}
+
+.page .f3{
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: #086b0b;
+    grid-area: footer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    position: sticky;
+}
+
+.page .formcontfinal{
+    padding-block: 27px;
+    padding-inline: 10px;
+    background-color: #055207;
+    grid-area: footer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    position: sticky;
+}
+
 .image-gallery {
     display: flex; 
     overflow-x: auto; 
